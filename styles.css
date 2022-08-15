@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg {
+    background-color: #8FE3CF;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    font-size: 35px;
+}
+
+.content {
+    width: calc(100% - 1rem);
+    margin: 0 0.5rem;
+    position: relative;
+    z-index: 999;
+}
+
+.headline {
+    font-size: 3.2rem;
+    margin: 3rem 0 1rem 0;
+    text-align: center;
+}
+
+p {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.3;
+}
+
+
+button {
+    width: 100%;
+    margin: 1rem 0;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    background-color: #8FE3CF;
+    font-weight: bold;
+}
+
+.loader {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    outline: 2px solid orange;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 960px) {
+   .bg {
+       width: 35vmin;
+       height: 55vmin;
+       border-radius: 1rem;
+       overflow: hidden;
+       position: relative;
+   }
+   
+   body {
+       display: grid;
+       place-items: center;
+       height: 100vh;
+       background-color: #ededed;
+   }
+   
+   p {
+       margin: 0.7rem 0;
+   }
+   
+   .headline {
+       margin-top: 4rem;
+   }
+} 
